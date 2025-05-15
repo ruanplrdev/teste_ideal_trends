@@ -39,7 +39,7 @@ Layout adaptado para diferentes resoluções:
 
 ## 📁 Estrutura de Pastas
 
-´´´
+```
 ├── index.html
 ├── assets/
 │ ├── images/
@@ -49,7 +49,7 @@ Layout adaptado para diferentes resoluções:
 │ └── splide/
 │ ├── splide.min.css
 │ └── splide.min.js
-´´´
+```
 ---
 
 ## ⏱️ Tempo de Realização
