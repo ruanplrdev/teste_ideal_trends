@@ -1,0 +1,46 @@
+.font_menu {
+    font-family: var(--roboto-font);
+    text-decoration: none;
+    color: var(--color--gray);
+    font-size: var(--font-normal);
+}
+
+.font_link_top_bar {
+    font-family: var(--roboto-font);
+    text-decoration: none;
+    font-size: var(--font-sm);
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+.text {
+    font-family: var(--roboto-font);
+    font-size: var(--font-sm);
+    color: var(--color-gray);
+}
+
+h1.title {
+    font-family: var(--roboto-font);
+    font-size: var(--font-xl);
+    color: var(--color-gray);
+    font-weight: 500;
+}
+
+h2.title {
+    font-family: var(--roboto-font);
+    font-size: var(--font-sm);
+    color: var(--color-gray);
+    font-weight: 500;
+}
+
+.list .list__item {
+    font-family: var(--roboto-font);
+    font-size: var(--font-sm);
+    color: var(--color-gray);
+}
+
+.slide__text{
+    font-family: var(--roboto-font);
+    font-size: var(--font-md);
+    color: var(--color-white);
+}

@@ -1,0 +1,21 @@
+:root {
+
+  --roboto-font: 'Roboto', sans-serif;
+  --opensans-font: 'Open Sans', sans-serif;
+  --georgia-font: 'Georgia', serif;
+
+  --color-white: #FFF;
+  --color-blue: #020087;
+  --color-blue-highlight: #1e1bc7;
+  --color-gray: #808080;
+  --color-lightgray: #d1d1d1;
+  --color-darkgray: #454545;
+  /* --color-lightgray: #AAA; */
+  
+  --font-xs: 10px;
+  --font-sm: 14px;
+  --font-normal: 16px;
+  --font-md: 18px;
+  --font-lg: 22px;
+  --font-xl: 25px;
+}

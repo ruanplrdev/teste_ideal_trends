@@ -1,0 +1,15 @@
+.bg-primary-color{
+    background-color:var(--color-white) ;
+}
+.bg-secondary-color{
+    background-color:var(--color-blue) ;
+}
+.bg-tertiary-color{
+    background-color:var(--color-lightgray) ;
+}
+.bg-gray-color{
+    background-color:var(--color-gray) ;
+}
+.bg-darkgray-color{
+    background-color:var(--color-darkgray) ;
+}

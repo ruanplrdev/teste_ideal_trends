@@ -1,0 +1,21 @@
+@import 'variables.css';
+@import 'reset.css';
+@import 'grid.css';
+@import 'typografy.css';
+@import 'main_header.css';
+@import 'colors.css';
+@import 'carousel.css';
+@import 'card.css';
+@import 'footer.css';
+
+
+.about{
+    display: flex;
+}
+.about__image{
+    max-width: 88%;
+    height: auto;
+    margin: 8px 8px 0 0;
+}
+
+
