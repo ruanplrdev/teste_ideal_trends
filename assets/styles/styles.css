@@ -9,13 +9,26 @@
 @import 'footer.css';
 
 
-.about{
+.about {
     display: flex;
 }
-.about__image{
-    max-width: 88%;
+
+.about__image {
+    max-width: calc(100% - 16px);
     height: auto;
-    margin: 8px 8px 0 0;
+    margin: 8px;
 }
 
+.about .col-5 {
+    align-items: normal;
+}
 
+@media only screen and (min-width: 576px) {
+    .about__image {
+        max-width: 88%;
+    }
+
+    .about .col-5 {
+        align-items: flex-end;
+    }
+}

@@ -22,6 +22,7 @@
     max-width: 42.5%;
     height: auto;
     margin: 7px 0 7px 7px;
+    min-width: 125px;
 }
 
 .nav__link_image {
@@ -34,7 +35,7 @@
     position: relative;
     width: 100%;
     max-width: 395px;
-    display: flex;
+    display: none;
     list-style: none;
 }
 
@@ -69,7 +70,6 @@
     display: none;
     width: 150%;
     opacity: 0;
-    transition: 0.5s;
     flex-direction: column;
     margin: 0 auto;
     margin-left: -25%;
@@ -104,4 +104,104 @@
 
 .nav__sub_list_item a:hover {
     background-color: var(--color-blue-highlight);
+}
+
+/* mobile */
+.menu_button {
+    cursor: pointer;
+    display: block;
+    width: 28px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.navmobile__list {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    top: -500px;
+    z-index: 99;
+    background-color: var(--color-white);
+
+}
+.navmobile__list.actived{
+    top: 61px;
+}
+
+.navmobile__item:first-child {
+    margin-left: 0;
+}
+
+.navmobile__item {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.navmobile__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: var(--font-md);
+    color: var(--color-gray)
+}
+
+.navmobile__item:hover>.navmobile__sub_list {
+    display: flex;
+    opacity: 1;
+    margin-top: 41px;
+    z-index: 9;
+}
+
+.navmobile__sub_list {
+    position: absolute;
+    display: none;
+    width: 100%;
+    opacity: 0;
+    flex-direction: column;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.navmobile__sub_list_item {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.navmobile__sub_list_item:hover .navmobile__sub_list {
+    display: flex;
+    opacity: 1;
+    width: 100%;
+    margin-top: 38px;
+}
+
+.navmobile__sub_list_item a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    justify-content: center;
+    padding: 10px 0;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navmobile__sub_list_item a:hover {
+    background-color: var(--color-blue-highlight);
+}
+
+@media only screen and (min-width: 768px) {
+    .nav__list {
+        display: flex;
+    }
+
+    .menu_button {
+        display: none;
+    }
 }

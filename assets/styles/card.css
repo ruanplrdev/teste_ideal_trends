@@ -1,7 +1,7 @@
 .box_cards {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
 }
 
 .card {
@@ -11,10 +11,17 @@
 }
 
 .card__image {
-    max-width: 247px;
     height: auto;
 }
 
 .card__text a {
     text-decoration: none;
+}
+
+@media only screen and (min-width: 576px) {
+    .box_cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
 }

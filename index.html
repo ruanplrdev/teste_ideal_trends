@@ -33,26 +33,55 @@
           </a>
         </div>
         <div class="col-6 justify_end align_end">
+          <a class="menu_button" onclick="toogleMenu()">
+            <img src="assets/images/menu_ico.png" width="100" alt="menu">
+          </a>
           <ul class="nav__list justify_between">
-            <li class="nav__item"><a href="#" class="nav__link font_menu">HOME</a></li>
+            <li class="nav__item"><a href="#" onclick="toogleMenu()" class="nav__link font_menu">HOME</a></li>
             <li class="nav__item">
               <a href="#" class="nav__link font_menu">EMPRESA</a>
+              
+              
               <ul class="nav__sub_list">
-                <li class="nav__sub_list_item"><a href="#">SUBMENU 1</a></li>
-                <li class="nav__sub_list_item"><a href="#">SUBMENU 1</a></li>
-                <li class="nav__sub_list_item"><a href="#">SUBMENU 1</a></li>
+                <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
                 <li class="nav__sub_list_item">
-                  <a href="#">SUBMENU 4</a>
+                  <a href="#" onclick="toogleMenu()">SUBMENU 4</a>
                   <ul class="nav__sub_list">
-                    <li class="nav__sub_list_item"><a href="#">SUBMENU 2</a></li>
-                    <li class="nav__sub_list_item"><a href="#">SUBMENU 2</a></li>
-                    <li class="nav__sub_list_item"><a href="#">SUBMENU 2</a></li>
+                    <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                    <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                    <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li class="nav__item"><a href="#" class="nav__link font_menu">CLIENTES</a></li>
-            <li class="nav__item"><a href="#" class="nav__link font_menu">CONTATO</a></li>
+            <li class="nav__item"><a href="#" onclick="toogleMenu()" class="nav__link font_menu">CLIENTES</a></li>
+            <li class="nav__item"><a href="#" onclick="toogleMenu()" class="nav__link font_menu">CONTATO</a></li>
+          </ul>
+          <!-- Mobile MENU -->
+          <ul class="navmobile__list justify_between">
+            <li class="navmobile__item"><a href="#" onclick="toogleMenu()" class="navmobile__link font_menu">HOME</a></li>
+            <li class="navmobile__item">
+              <a href="#" class="navmobile__link font_menu">EMPRESA</a>
+              
+              
+              <ul class="navmobile__sub_list">
+                <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="navmobile__sub_list_item">
+                  <a href="#">SUBMENU 4</a>
+                  <ul class="navmobile__sub_list">
+                    <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                    <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                    <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="navmobile__item"><a href="#" onclick="toogleMenu()" class="navmobile__link font_menu">CLIENTES</a></li>
+            <li class="navmobile__item"><a href="#" onclick="toogleMenu()" class="navmobile__link font_menu">CONTATO</a></li>
           </ul>
         </div>
       </nav>
@@ -64,10 +93,10 @@
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide bg-gray-color justify_center align_center">
-              <h2 class="slide__text">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
+              <h2 class="slide__text m-1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
             </li>
             <li class="splide__slide bg-gray-color justify_center align_center">
-               <h2 class="slide__text">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
+               <h2 class="slide__text m-1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
             </li>
           </ul>
         </div>
@@ -96,7 +125,7 @@
           </article>
 
         </div>
-        <div class="col-5 align_end">
+        <div class="col-5">
           <img class="about__image" src="assets/images/main-img.png" width="511" height="333" alt="">
         </div>
       </div>
@@ -173,6 +202,9 @@
   <script src="assets/libs/splide/splide.min.js"></script>
   <script>
     new Splide('.splide').mount();
+    function toogleMenu(){
+     const element =  document.getElementsByClassName("navmobile__list")[0].classList.toggle('actived');
+    }
   </script>
 </body>
 
