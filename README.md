@@ -1,4 +1,4 @@
-# 🖥️ Teste Front-end - Empresa Exemplo
+# 🖥️ Teste Front-end - Grupo Ideal Trends
 
 Este repositório contém a solução desenvolvida por **Ruan Pissinati** para o desafio técnico de Front-end proposto pelo Grupo Ideal Trends. O projeto foi construído utilizando **HTML, CSS e JavaScript puros**, respeitando todos os critérios de responsividade, semântica, organização e fidelidade visual.
 
