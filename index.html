@@ -4,206 +4,207 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Página institucional com informações sobre a empresa, clientes e contato." />
-  <title>Empresa Exemplo</title>
+  <meta name="description"
+    content="Conheça a Empresa Exemplo: soluções inovadoras para empresas, atendimento personalizado e excelência nos serviços. Entre em contato." />
+  <title>Empresa Exemplo | Soluções Corporativas e Contato</title>
 
   <link rel="stylesheet" href="assets/styles/styles.css">
   <link rel="stylesheet" href="assets/libs/splide/splide.min.css" />
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
 
-  <header class="top_bar bg-secondary-color">
+  <div class="top_bar bg-secondary-color">
     <div class="container">
       <div class="row justify_end">
-        <p class="top_bar__text ">
-          <a class="top_bar__link--first font_link_top_bar" href="#">11 1234-1234</a>
-          <a class="font_link_top_bar" href="#">11 1234-1234</a>
+        <p class="top_bar__text">
+          <a class="top_bar__link--first font_link_top_bar" href="tel:1112341234" title="Ligar para 11 1234-1234">11
+            1234-1234</a>
+          <a class="font_link_top_bar" href="tel:1112341234" title="Ligar para 11 1234-1234">11 1234-1234</a>
         </p>
       </div>
     </div>
-  </header>
+  </div>
 
-  <header class="section bg-primary-color">
+  <header class="section bg-primary-color header-section">
     <div class="container">
-      <nav class="nav row justify_between">
+      <nav class="nav row justify_between" role="navigation" aria-label="Menu principal">
         <div class="col-6">
           <a class="nav__link_image" href="#">
-            <img class="nav__logo_image" src="assets/images/logo.png" alt="Logo do site" width="298" height="113">
+            <img class="nav__logo_image" src="assets/images/logo.png" alt="Logo da Empresa Exemplo" width="298"
+              height="113">
           </a>
         </div>
         <div class="col-6 justify_end align_end">
-          <a class="menu_button" onclick="toogleMenu()">
-            <img src="assets/images/menu_ico.png" width="100" alt="menu">
+          <a class="menu_button" onclick="toggleMenu()" title="Abrir menu">
+            <img src="assets/images/menu_ico.png" width="100" alt="Ícone do menu">
           </a>
           <ul class="nav__list justify_between">
-            <li class="nav__item"><a href="#" onclick="toogleMenu()" class="nav__link font_menu">HOME</a></li>
+            <li class="nav__item"><a href="#" onclick="toggleMenu()" class="nav__link font_menu">HOME</a></li>
             <li class="nav__item">
               <a href="#" class="nav__link font_menu">EMPRESA</a>
-              
-              
               <ul class="nav__sub_list">
-                <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
-                <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
-                <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="nav__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 1</a></li>
+                <li class="nav__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 1</a></li>
+                <li class="nav__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 1</a></li>
                 <li class="nav__sub_list_item">
-                  <a href="#" onclick="toogleMenu()">SUBMENU 4</a>
+                  <a href="#">SUBMENU 4</a>
                   <ul class="nav__sub_list">
-                    <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
-                    <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
-                    <li class="nav__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                    <li class="nav__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 2</a></li>
+                    <li class="nav__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 2</a></li>
+                    <li class="nav__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 2</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li class="nav__item"><a href="#" onclick="toogleMenu()" class="nav__link font_menu">CLIENTES</a></li>
-            <li class="nav__item"><a href="#" onclick="toogleMenu()" class="nav__link font_menu">CONTATO</a></li>
+            <li class="nav__item"><a href="#" onclick="toggleMenu()" class="nav__link font_menu">CLIENTES</a></li>
+            <li class="nav__item"><a href="#" onclick="toggleMenu()" class="nav__link font_menu">CONTATO</a></li>
           </ul>
-          <!-- Mobile MENU -->
           <ul class="navmobile__list justify_between">
-            <li class="navmobile__item"><a href="#" onclick="toogleMenu()" class="navmobile__link font_menu">HOME</a></li>
+            <li class="navmobile__item"><a href="#" onclick="toggleMenu()" class="navmobile__link font_menu">HOME</a>
+            </li>
             <li class="navmobile__item">
               <a href="#" class="navmobile__link font_menu">EMPRESA</a>
-              
-              
               <ul class="navmobile__sub_list">
-                <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
-                <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
-                <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 1</a></li>
+                <li class="navmobile__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 1</a></li>
+                <li class="navmobile__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 1</a></li>
+                <li class="navmobile__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 1</a></li>
                 <li class="navmobile__sub_list_item">
                   <a href="#">SUBMENU 4</a>
                   <ul class="navmobile__sub_list">
-                    <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
-                    <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
-                    <li class="navmobile__sub_list_item"><a href="#" onclick="toogleMenu()">SUBMENU 2</a></li>
+                    <li class="navmobile__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 2</a></li>
+                    <li class="navmobile__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 2</a></li>
+                    <li class="navmobile__sub_list_item"><a href="#" onclick="toggleMenu()">SUBMENU 2</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li class="navmobile__item"><a href="#" onclick="toogleMenu()" class="navmobile__link font_menu">CLIENTES</a></li>
-            <li class="navmobile__item"><a href="#" onclick="toogleMenu()" class="navmobile__link font_menu">CONTATO</a></li>
+            <li class="navmobile__item"><a href="#" onclick="toggleMenu()"
+                class="navmobile__link font_menu">CLIENTES</a></li>
+            <li class="navmobile__item"><a href="#" onclick="toggleMenu()" class="navmobile__link font_menu">CONTATO</a>
+            </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-  <section class="carousel_section section bg-tertiary-color">
-    <div class="container">
-      <div class="splide" data-splide='{"type":"loop","arrows":false, "pagination":false}'>
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide bg-gray-color justify_center align_center">
-              <h2 class="slide__text m-1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
-            </li>
-            <li class="splide__slide bg-gray-color justify_center align_center">
-               <h2 class="slide__text m-1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="about section pb-4 bg-primary-color">
-    <div class="container">
-      <div class="row">
-        <div class="col-7">
-          <article class="p-1">
-            <h1 class="title mt-1">TESTE DE HTML E CSS</h1>
-            <h2 class="title mt-1">Quesitos de avaliação:</h2>
-            <ul class="list mt-2-4 pl-2">
-              <li class="list__item">Organização do código (quanto mais limpo melhor); </li>
-              <li class="list__item">Nível de detalhamento (quanto mais idêntico melhor); </li>
-              <li class="list__item">Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);</li>
+  <main>
+    <section class="carousel_section section bg-tertiary-color" aria-label="Banner principal" role="banner">
+      <div class="container">
+        <div class="splide" data-splide='{"type":"loop","arrows":false, "pagination":false}'>
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide bg-gray-color justify_center align_center">
+                <h2 class="slide__text m-1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
+              </li>
+              <li class="splide__slide bg-gray-color justify_center align_center">
+                <h2 class="slide__text m-1">SLIDER (INSERIR 2 SLIDERS DE EXEMPLO)</h2>
+              </li>
             </ul>
-            <br>
-            <p class="text">Ao finalizar o teste, envie zipado o código para o e-mail com o tempo<br>gasto e seu cv
-              anexado.
-            </p>
-            <br />
-            <p class="text">Obrigado e boa sorte!</p>
-          </article>
-
-        </div>
-        <div class="col-5">
-          <img class="about__image" src="assets/images/main-img.png" width="511" height="333" alt="">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section bg-primary-color">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="title ml-1">BOXES DE DESTAQUE</h1>
+    <section class="about section pb-4 bg-primary-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <article class="p-1">
+              <h1 class="title mt-1">TESTE DE HTML E CSS</h1>
+              <h2 class="title mt-1">Quesitos de avaliação:</h2>
+              <ul class="list mt-2-4 pl-2">
+                <li class="list__item">Organização do código (quanto mais limpo melhor); </li>
+                <li class="list__item">Nível de detalhamento (quanto mais idêntico melhor); </li>
+                <li class="list__item">Tempo de desenvolvimento (seja sincero ao enviar o tempo gasto);</li>
+              </ul>
+              <br>
+              <p class="text">Ao finalizar o teste, envie zipado o código para o e-mail com o tempo<br>gasto e seu cv
+                anexado.
+              </p>
+              <br />
+              <p class="text">Obrigado e boa sorte!</p>
+            </article>
+
+          </div>
+          <div class="col-5">
+            <img class="about__image" src="assets/images/main-img.png" width="511" height="333" alt="">
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="box_cards mt-1 p-1">
-            <div class="card">
-              <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
-              <p class="card__text mt-1">
-                <a class="text" href="#">
-                  Um texto descritivo com link apenas.
-                </a>
-              </p>
-            </div>
-            <div class="card">
-              <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
-              <p class="card__text mt-1">
-                <a class="text" href="#">
-                  Um texto descritivo com link apenas.
-                </a>
-              </p>
-            </div>
-            <div class="card">
-              <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
-              <p class="card__text mt-1">
-                <a class="text" href="#">
-                  Um texto descritivo com link apenas.
-                </a>
-              </p>
-            </div>
-            <div class="card">
-              <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
-              <p class="card__text mt-1">
-                <a class="text" href="#">
-                  Um texto descritivo com link apenas.
-                </a>
-              </p>
+    </section>
+
+    <section class="section bg-primary-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="title ml-1">BOXES DE DESTAQUE</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="box_cards mt-1 p-1">
+              <div class="card">
+                <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
+                <p class="card__text mt-1">
+                  <a class="text" href="#">
+                    Um texto descritivo com link apenas.
+                  </a>
+                </p>
+              </div>
+              <div class="card">
+                <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
+                <p class="card__text mt-1">
+                  <a class="text" href="#">
+                    Um texto descritivo com link apenas.
+                  </a>
+                </p>
+              </div>
+              <div class="card">
+                <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
+                <p class="card__text mt-1">
+                  <a class="text" href="#">
+                    Um texto descritivo com link apenas.
+                  </a>
+                </p>
+              </div>
+              <div class="card">
+                <img class="card__image" src="assets/images/card_img.png" width="308" height="255" alt="">
+                <p class="card__text mt-1">
+                  <a class="text" href="#">
+                    Um texto descritivo com link apenas.
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+  </main>
 
-
-
-  </section>
-  <footer class="section footer mt-2 bg-darkgray-color">
+  <footer class="section footer mt-2 bg-darkgray-color" role="contentinfo">
     <div class="container">
       <div class="row">
-        <div class="col-12 align_center">
+        <nav aria-label="Links do rodapé" class="col-12 align_center">
           <ul class="footer__nav justify_between mt-2">
             <li class="footer__nav_item"><a href="#">HOME</a></li>
-            <li class="footer__nav_item"><a href="#">EMPRESAS</a></li>
+            <li class="footer__nav_item"><a href="#">EMPRESA</a></li>
             <li class="footer__nav_item"><a href="#">CLIENTES</a></li>
             <li class="footer__nav_item"><a href="#">CONTATO</a></li>
           </ul>
-          <h3 class="footer__title mt-8">
-            RODAPÉ
-          </h3>
-        </div>
+          <h2 class="footer__title mt-8">RODAPÉ</h2>
+        </nav>
       </div>
     </div>
   </footer>
+
   <script src="assets/libs/splide/splide.min.js"></script>
   <script>
     new Splide('.splide').mount();
-    function toogleMenu(){
-     const element =  document.getElementsByClassName("navmobile__list")[0].classList.toggle('actived');
+    function toggleMenu() {
+      document.querySelector(".navmobile__list").classList.toggle('actived');
     }
   </script>
 </body>

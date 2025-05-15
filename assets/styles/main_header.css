@@ -113,6 +113,7 @@
     width: 28px;
     margin-right: 16px;
     margin-bottom: 16px;
+    background-color: var(--color-white);
 }
 
 .navmobile__list {
